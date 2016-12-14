@@ -93,8 +93,9 @@ echo "
 			<label for=\"pass\">Constraseña</label> <input type=\"password\" class=\"loginInput\" AUTOCOMPLETE=\"off\" size=\"20\" name=\"password\"><br />
 
 			<br />
-
-			<p class=\"submit\"><input type=\"submit\" value=\"Entrar\" name=\"Login\"></p>
+			<br />
+			<br />
+			<input class=\"boton\" type=\"submit\" value=\"Entrar\" name=\"Login\">
 
 	</fieldset>
 
@@ -111,9 +112,7 @@ echo "
 	<br />
 	<br />
 	<br />
-	<br />
-	<br />
-	<br />
+
 
 	<!-- <img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/RandomStorm.png\" /> -->
 	</div > <!--<div id=\"content\">-->

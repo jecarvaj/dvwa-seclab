@@ -78,19 +78,18 @@ function dvwaPhpIdsTrap() {
 		if( !$result->isEmpty() ) {
 			require_once 'IDS/Log/File.php';
 			require_once 'IDS/Log/Composite.php';
-			require_once 'IDS/Log/Database.php';
 
 			$compositeLog = new IDS_Log_Composite();
 			$compositeLog->addLogger(IDS_Log_File::getInstance($init));
-			$compositeLog->addLogger(IDS_Log_Database::getInstance($init));
+
 			$compositeLog->execute($result);
 
-			//echo 'Hacking attempt detected and logged.<br />Have a nice day.';
+			echo 'Hacking attempt detected and logged.<br />Have a nice day.';
 
-		//	if( $_DVWA[ 'default_phpids_verbose' ] == 'true')
-		//		echo $result;
+			if( $_DVWA[ 'default_phpids_verbose' ] == 'true')
+				echo $result;
 
-//			exit;
+			exit;
 		}
 	}
 	catch (Exception $e) {

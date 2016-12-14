@@ -1,8 +1,10 @@
 body {
-	background: #fefffe;
-	font: 12px/15px Arial, Helvetica, sans-serif;
+	background: #262626; /*fefffe*/
+	font: 14px/20px Arial, Helvetica, sans-serif;
 	line-height: 20px;
-	color: #6b6b6b;
+	color: #a8a7a8;
+	font-size:16px;
+	text-shadow: 2px 2px 2px black;
 }
 
 #wrapper {
@@ -25,27 +27,42 @@ body {
 }
 
 label {
-	float: left;
-	text-align: right;
+	float: center;
+	text-align: center;
 	margin-right: 0.5em;
 	display: block;
-	overflow: hidden;
-	padding-right: 50px;
-	font-weight: bold;
+	margin-bottom:10px;
+	/*overflow: hidden;*/
+	padding: 50px
+	font-weight: 300;
+
 }
 
 .loginInput {
 	float: left;
-	color: #6B6B6B;
+	color: #bbbbbb; /*6b6b6b*/
 	width: 320px;
-	background-color: #F4F4F4;
+	height:20px;
+	background-color: #2d2d2d;/* #535353 #f4f4f4*/
 	border: 1px;
+	font-size:17px;
 	border-style: solid;
-	border-color: #c4c4c4;
-	padding: 6px;
-	margin-bottom: 12px;
+	border-color: #7aa6d1; /*c4c4c4*/
+	border-radius: 6px;
+	text-shadow: 1px 1px 1px black;
+	padding: 10px;
+	margin-bottom: 20px;
+	-webkit-transition:all .25s ease-in-out;
+	transition:all .25s ease-in-out;
 }
-
+.loginInput:focus{
+	color:white;
+	background:#353535;
+	border-color:#ff892a;
+	outline:0;
+	border-radius:7px;
+	/*padding:11px;*/
+}
 fieldset {
 	width: 350px;
 	padding: 10px 20px 10px 20px;
@@ -53,7 +70,23 @@ fieldset {
 	border-style: none;
 }
 
-p {
-	font-size: 10px;
+.boton {
+	float:left;
+	color:#a8b1bc;
+	font-size: 20px;
+	background-color:#181e21;
+	width:342px;
+	height:50px;
+	/*padding:10px;*/
+	border-radius:3px;
+	border:solid 1px;
+	border-color:#ff892a;
+	text-align:center;
+	text-shadow:1px 1px 1px black;
+	-webkit-transition:all .2s ease-in-out;
+	transition: all .1s ease-in-out;
 }
-
+.boton:hover{
+	background-color:#1a4169;
+	
+}

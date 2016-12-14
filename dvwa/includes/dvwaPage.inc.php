@@ -197,15 +197,15 @@ function dvwaHtmlEcho( $pPage ) {
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'exec', 'name' => 'Command Injection', 'url' => 'vulnerabilities/exec/' );
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'csrf', 'name' => 'CSRF', 'url' => 'vulnerabilities/csrf/' );
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'fi', 'name' => 'File Inclusion', 'url' => 'vulnerabilities/fi/.?page=include.php' );
-		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'upload', 'name' => 'File Upload', 'url' => 'vulnerabilities/upload/' );
+		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'upload', 'name' => 'File Upload', 'url' => 'vulnerabilities/upload/' );
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'captcha', 'name' => 'Insecure CAPTCHA', 'url' => 'vulnerabilities/captcha/' );
 		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'sqli', 'name' => 'Inyección SQL', 'url' => 'vulnerabilities/sqli/' );
-$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'dos', 'name' => 'Ataque de DOS', 'url' => 'dos.php' );
-$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'medio', 'name' => 'Envenenamiento ARP', 'url' => 'arp.php' );
-$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'buffer', 'name' => 'Buffer Overflow', 'url' => 'buffer.php' );
+	$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'dos', 'name' => 'Ataque de DOS', 'url' => 'dos.php' );
+	$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'medio', 'name' => 'Envenenamiento ARP', 'url' => 'arp.php' );
+	$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'buffer', 'name' => 'Buffer Overflow', 'url' => 'buffer.php' );
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'sqli_blind', 'name' => 'SQL Injection (Blind)', 'url' => 'vulnerabilities/sqli_blind/' );
 		//$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'xss_r', 'name' => 'XSS (Reflected)', 'url' => 'vulnerabilities/xss_r/' );
-		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'xss_s', 'name' => 'XSS (Stored)', 'url' => 'vulnerabilities/xss_s/' );
+		$menuBlocks[ 'vulnerabilities' ][] = array( 'id' => 'xss_s', 'name' => 'XSS Persistente', 'url' => 'vulnerabilities/xss_s/' );
 	}
 
 	$menuBlocks[ 'meta' ] = array();
