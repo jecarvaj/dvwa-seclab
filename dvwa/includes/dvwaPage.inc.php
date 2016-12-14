@@ -183,7 +183,7 @@ function dvwaHtmlEcho( $pPage ) {
 	if( dvwaIsLoggedIn() ) {
 		$menuBlocks[ 'home' ][] = array( 'id' => 'home', 'name' => 'Inicio', 'url' => '.' );
 		//$menuBlocks[ 'home' ][] = array( 'id' => 'instructions', 'name' => 'Instructions', 'url' => 'instructions.php' );
-		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup / Reset DB', 'url' => 'setup.php' );
+		$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Reset DB', 'url' => 'setup.php' );
 	}
 	else {
 		//$menuBlocks[ 'home' ][] = array( 'id' => 'setup', 'name' => 'Setup DVWA', 'url' => 'setup.php' );
@@ -210,10 +210,10 @@ function dvwaHtmlEcho( $pPage ) {
 
 	$menuBlocks[ 'meta' ] = array();
 	if( dvwaIsLoggedIn() ) {
-		$menuBlocks[ 'meta' ][] = array( 'id' => 'security', 'name' => 'Seguridad', 'url' => 'security.php' );
+		//$menuBlocks[ 'meta' ][] = array( 'id' => 'security', 'name' => 'Seguridad', 'url' => 'security.php' );
 		//$menuBlocks[ 'meta' ][] = array( 'id' => 'phpinfo', 'name' => 'PHP Info', 'url' => 'phpinfo.php' );
 	}
-	$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'Información', 'url' => 'about.php' );
+	//$menuBlocks[ 'meta' ][] = array( 'id' => 'about', 'name' => 'Información', 'url' => 'about.php' );
 
 	if( dvwaIsLoggedIn() ) {
 		$menuBlocks[ 'logout' ] = array();
